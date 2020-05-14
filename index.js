@@ -42,13 +42,13 @@ app.get('/welcome',(request,response)=>{
     response.status(200).json({hello:process.env})
 })
 
-app.get('/welcome1',(request,response)=>{
-    response.status(200).json({title:"Silent Patient", author:"Alex Michaelides"})
-})
+// app.get('/welcome1',(request,response)=>{
+//     response.status(200).json({title:"Silent Patient", author:"Alex Michaelides"})
+// })
 
-app.get('/welcome2',(request,response)=>{
-    response.status(200).json({Smartphone:"LenovoP70A",Price:"800 Ron" ,Guarantee:"1 year"})
-})
+// app.get('/welcome2',(request,response)=>{
+//     response.status(200).json({Smartphone:"LenovoP70A",Price:"800 Ron" ,Guarantee:"1 year"})
+// })
 app.get('/createdatabase', (request, response) => {
     sequelize.sync({force:true}).then(() => {
         response.status(200).send('the tables was created')
