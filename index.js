@@ -24,7 +24,7 @@ const app = express()
 app.use('/',express.static('frontend'))
 // testare conexiune
 app.get('/welcome',(request,response)=>{
-    response.status(200).json({hello:"everybody"})
+    response.status(200).json({hello:process.env})
 })
 
 app.get('/welcome1',(request,response)=>{
