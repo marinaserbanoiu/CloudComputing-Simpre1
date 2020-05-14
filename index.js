@@ -16,8 +16,8 @@ const sequelize = new Sequelize(result[0].split("=")[1], result[2].split("=")[1]
 else{
     const sequelize = new Sequelize('info_books', 'username', 'password', {
     dialect: "mysql",
-    host: "localhost",
-    port: 3306
+    host: "localhost"
+
 })
 }
 
