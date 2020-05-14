@@ -16,7 +16,7 @@ Aplicația dezvoltată de mine vine în ajutorul iubitorilor de cărți, oferind
  
  ### Flux de date
  Aplicația are la bază un server creat cu ajutorul Node.js și ExpressJs. Datele sunt stocate într-o bază de date MySql și pot fi accesate prin metodele HTTP (POST, GET, UPDATE, DELETE). Accesul la baza de date se realizează automat prin biblioteca Sequelize.
-Utilizatorul va putea adăuga o carte, actualiza, șterge și afișa toate cărțile adăugate până atunci.
+Utilizatorul va putea adăuga o carte, șterge și afișa toate cărțile adăugate până atunci.
 Atunci când utilizatorul face o cerere pe server de tip CRUD, serverul web va prelucra această cerere și va returna un conținut pe care browserul îl va interpreta și îl va afișa utilizatorului în format JSON,XML etc.
  ### 1) Exemple de request-response 
  ```
@@ -65,7 +65,7 @@ Atunci când utilizatorul face o cerere pe server de tip CRUD, serverul web va p
    
    ![ex1](allbooks.PNG)  
  ### 3) Google Books API - Public API
- Serviciul utilizat de mine în cadrul aplicației, Google Books API nu a necesitat o autentificare cu APIkey sau Oauth înainte de utilizare. Fiind un API pe care doar se putea aplica metoda GET, am putut să afișez informații despre anumite cărți în funcție de căutare, fără nicio problemă. API-ul utilizat de mine a avut următoarea formă: https://www.googleapis.com/books/v1/{collectionName}/resourceID?parameters.  
+ Serviciul utilizat de mine în cadrul aplicației, Google Books API nu a necesitat o autentificare cu APIkey sau Oauth înainte de utilizare. Fiind un API pe care doar se putea aplica metoda GET, am putut să afișez informații despre anumite cărți în funcție de căutare, fără nicio problemă. API-ul utilizat de mine a avut următoarea formă: https://www.googleapis.com/books/v1/volumes?q=CuvantCautare.  
  ### Capturi de ecran - aplicație
  Aplicația mea are următoarea interfață principală:  
  
