@@ -65,7 +65,7 @@ Atunci când utilizatorul face o cerere pe server de tip CRUD, serverul web va p
    
    ![ex1](allbooks.PNG)  
  ### 3) Google Books API - Public API
- Serviciul utilizat de mine în cadrul aplicației, Google Books API nu a necesitat o autentificare cu APIkey sau Oauth înainte de utilizare. Fiind un API pe care doar se putea aplica metoda GET, am putut să afișez informații despre anumite cărți în funcție de căutare, fără nicio problemă. API-ul utilizat de mine a avut următoarea formă: https://www.googleapis.com/books/v1/volumes?q=CuvantCautare.  
+ Serviciul utilizat de mine în cadrul aplicației, Google Books API nu a necesitat o autentificare cu APIkey sau Oauth înainte de utilizare. Fiind un API pe care doar se putea aplica metoda GET, am putut să afișez informații despre anumite cărți în funcție de căutare, fără nicio problemă. API-ul utilizat de mine a avut următoarea formă: https://www.googleapis.com/books/v1/volumes?q=CuvantCautare. De exemplu: https://www.googleapis.com/books/v1/volumes?q=harrypotter. 
  ### Capturi de ecran - aplicație
  Aplicația mea are următoarea interfață principală:  
  
