@@ -7,16 +7,17 @@ let sequelize
 if(process.env.MYSQLCONNSTR_localdb){
     let result = process.env.MYSQLCONNSTR_localdb.split(";")
 
-const sequelize = new Sequelize(result[0].split("=")[1], result[2].split("=")[1], result[3].split("=")[1], {
+    sequelize = new Sequelize(result[0].split("=")[1], result[2].split("=")[1], result[3].split("=")[1], {
     dialect: "mysql",
     host: result[1].split("=")[1].split(":")[0],
     port: result[1].split("=")[1].split(":")[1]
 })
 }
 else{
-    const sequelize = new Sequelize('info_books', 'username', 'password', {
+    sequelize = new Sequelize('info_books', 'username', 'password', {
     dialect: "mysql",
-    host: "localhost"
+    host: "localhost", 
+    port: 3306
 
 })
 }
